@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="left"> <a href="/">Nikhil's Portfolio</a></div>
+        <div class="right">  <ul>
+            <li> <a href="/">Home</a> </li>
+            <li> <a href="#section1">About</a> </li>
+            <li> <a href="#section2">Skills</a> </li> 
+            <li> <a href="#section3">Projects</a> </li>
+            <li> <a href="#section4">Contact me</a> </li>
+        </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="firstSection" id="section1">
+            <div class="leftSection">
+                <img src="images/bg.png">
+            </div>
+            <div class="rightSection">
+                Hello, I am <span class="purple"> Nikhil </span> 
+                and <div>  i am a passionate  </div>
+                 <span id="element"></span>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="secondSection" id="section2">
+            <h1>Skills</h1>
+            <span class="text-gray">Technical skills i have worked on </span>
+
+            <div class="box">
+                <div class="vertical-line">
+                    <img src="images/html.png" class="image-top">
+                    <div class="vertical-title"> HTML </div>
+                    <div class="vertical-desc"><p class="html-desc"></p>Experienced in creating semantic and accessible web pages, utilizing the latest HTML5 standards.</div>
+                </div>
+                <div class="vertical-line">
+                    <img src="images/css.png" class="image-top">
+                    <div class="vertical-title"> CSS</div>
+                    <div class="vertical-desc"><p class="css-desc">Skilled in modern CSS techniques, including Flexbox, Grid, and responsive design.</p></div>
+                </div>
+                <div class="vertical-line">
+                    <img src="images/javascript.png" class="image-top">
+                    <div class="vertical-title"> JAVASCRIPT</div>
+                    <div class="vertical-desc"><p class="js-desc">Proficient in ES6+ features, including asynchronous programming and DOM manipulation.</p></div>
+                </div>
+                <div class="vertical-line">
+                    <img src="images/react.png" class="image-top">
+                    <div class="vertical-title"> REACT</div> 
+                    <div class="vertical-desc"><p class="react-text"></p>Experienced in building dynamic user interfaces using React, focusing on state management and component lifecycles.</div>
+                </div> 
+                <div class="vertical-line">
+                    <img src="images/tailwind.png" class="image-top">
+                    <div class="vertical-title">TAILWIND</div>
+                    <div class="vertical-desc"><p class="tailwind-desc">Adept at using Tailwind CSS for rapid UI development, with a strong understanding of utility-first design principles.</p></div>
+                </div> 
+            </div> 
+        </section>
+
+        <hr>
+
+        <section class="thirdSection" id="section3">
+            <h1>Projects</h1>
+            <span class="text-gray">Here are some of the projects I have developed</span>
+            <div class="ss-container">
+                <div class="third-left">
+                <img src="images/weather app screenshot.png">
+                <h1>Weather App</h1>
+                <h4>Tech-used :- Html, Css, Javascript</h4>
+                <button><a href="https://github.com/Nikhil2690/Weather-App-project">GitHub</a></button>
+                </div>
+                <div class="third-right">
+                <img src="images/Nike clone screenshot.png">
+                <h1>Nike clone Web App</h1> 
+                <h4>Tech-used :- React & Tailwind</h4>
+                <button class="nikeGitLink"><a href="https://github.com/Nikhil2690/Nike-Clone-web-app">GitHub</a></button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer >
+        <div class="footer" id="section4">
+            <div class="footerFirst">Nikhil's portfolio</div>
+            <div class="footerSecond">
+             <a href="https://www.linkedin.com/in/nikhiladwani/"> <img src="images/LinkedInLogo.png"> </a>
+             <a href="https://github.com/Nikhil2690"> <img src="images/GithubLogo.png" class="gitLogo"> </a>
+           <div class="google">  <img src="images/GoogleLogo.png" class="google-logo"> <p>nikhiladwani3@gmail.com</p> </div>
+            </div>
+            <div class="footerThird">
+             copyright &#169; Nikhil Adwani | All rights reserved
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+    var typed = new Typed('#element', {
+        strings: [' Web Designer.', 'web Developer.'],
+        typeSpeed: 50,
+      });
+    </script>
+   
+</body>
+</html>
