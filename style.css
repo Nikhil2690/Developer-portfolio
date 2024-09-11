@@ -241,3 +241,27 @@ hr {
     text-align: center;
   }
 }
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode nav {
+  background-color: #1f1f1f;
+}
+
+body.dark-mode .purple {
+  color: #bb86fc;
+}
+
+body.dark-mode .text-gray {
+  color: #a0a0a0;
+}
+
+body.dark-mode hr {
+  background-color: #bb86fc;
+}
+
+body.dark-mode .footer {
+  background-color: #1f1f1f;
+}
