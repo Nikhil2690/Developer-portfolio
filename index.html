@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nikhil Adwani - Full Stack Developer & AI Enthusiast. Experienced in React, JavaScript, and modern web technologies.">
+    <meta name="keywords" content="Nikhil Adwani, Full Stack Developer, React Developer, JavaScript, Web Development, AI, Portfolio">
+    <meta name="author" content="Nikhil Adwani">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Nikhil Adwani - Full Stack Developer">
+    <meta property="og:description" content="Professional portfolio showcasing modern web development projects and skills">
+    <meta property="og:type" content="website">
+    
+    <title>Nikhil Adwani - Full Stack Developer & AI Enthusiast</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar" role="navigation">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="/" class="brand-link">
+                    <span class="brand-text">Nikhil Adwani</span>
+                    <span class="brand-subtitle">Full Stack Developer</span>
+                </a>
+            </div>
+            <div class="nav-menu">
+                                <ul class="nav-list">
+                    <li class="nav-item"><a href="#hero" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="https://drive.google.com/file/d/1_QHAr09vhVvXx6c__J2HQPJtZsttehSd/view?usp=drive_link" class="nav-link resume-link" target="_blank" rel="noopener">Resume</a></li>
+                </ul>
+                <button id="darkModeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-sun sun-icon"></i>
+                    <i class="fas fa-moon moon-icon"></i>
+                </button>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                <span></span>
+                <span></span>
+                <span></span>
+        </button>    
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <span class="hero-greeting">Hello, I'm</span>
+                        <h1 class="hero-name">Nikhil Adwani</h1>
+                        <div class="hero-title">
+                            <span class="hero-role">I'm a passionate </span>
+                            <span id="typed-text" class="hero-typed"></span>
+                        </div>
+                        <p class="hero-description">
+                            Full Stack Developer with expertise in modern web technologies, AI integration, 
+                            and creating scalable digital solutions. Passionate about building user-centric 
+                            applications that solve real-world problems.
+                        </p>
+                        <div class="hero-cta">
+                            <a href="#projects" class="btn btn-primary">
+                                <i class="fas fa-code"></i>
+                                View My Work
+                            </a>
+                            <a href="https://drive.google.com/file/d/1_QHAr09vhVvXx6c__J2HQPJtZsttehSd/view?usp=drive_link" class="btn btn-secondary" target="_blank" rel="noopener">
+                                <i class="fas fa-file-alt"></i>
+                                Download Resume
+                            </a>
+                            <a href="#contact" class="btn btn-outline">
+                                <i class="fas fa-envelope"></i>
+                                Get In Touch
+                            </a>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">6+</span>
+                                <span class="stat-label">Months Experience</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">10+</span>
+                                <span class="stat-label">Projects Completed</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">5+</span>
+                                <span class="stat-label">Technologies</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-visual">
+                        <div class="hero-image-container">
+                            <img src="images/Developer.jpeg" alt="Nikhil Adwani - Full Stack Developer" class="hero-image">
+                            <div class="hero-image-backdrop"></div>
+                        </div>
+                        <div class="floating-elements">
+                            <div class="floating-icon floating-icon-1">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <div class="floating-icon floating-icon-2">
+                                <i class="fab fa-js-square"></i>
+                            </div>
+                            <div class="floating-icon floating-icon-3">
+                                <i class="fab fa-python"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll-indicator">
+                    <span class="scroll-text">Scroll Down</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">Get to know me better</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="about-paragraph">
+                            I'm a passionate Full Stack Developer with a strong foundation in modern web technologies 
+                            and a growing expertise in AI integration. My journey in software development has been 
+                            driven by curiosity and a desire to create meaningful digital experiences.
+                        </p>
+                        <p class="about-paragraph">
+                            With experience in React, JavaScript, Python, and various modern frameworks, I enjoy 
+                            tackling complex problems and turning ideas into reality. I'm particularly interested 
+                            in the intersection of AI and web development, exploring how machine learning can 
+                            enhance user experiences.
+                        </p>
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>Computer Science Graduate</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-code"></i>
+                                <span>Full Stack Development</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-brain"></i>
+                                <span>AI & Machine Learning Enthusiast</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-skills-preview">
+                        <h3>Quick Skills Overview</h3>
+                        <div class="skills-grid">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">HTML/CSS</span>
+                            <span class="skill-tag">Git</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="experience-section" id="experience">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Experience & Education</h2>
+                    <p class="section-subtitle">My professional and academic journey</p>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">July 2024 - Present</div>
+                            <h3 class="timeline-title">Frontend Developer - Boomlex Technologies</h3>
+                            <p class="timeline-description">
+                                Working as a Frontend Developer, building modern web applications using React, JavaScript, 
+                                and other cutting-edge technologies. Collaborating with cross-functional teams to deliver 
+                                high-quality user experiences and implementing responsive design solutions.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">March 2024 - June 2024</div>
+                            <h3 class="timeline-title">SDE Intern - Tienext</h3>
+                            <p class="timeline-description">
+                                Gained hands-on experience as a Software Development Engineer Intern, working on real-world 
+                                projects and contributing to software development lifecycle. Developed problem-solving skills 
+                                and learned industry best practices while collaborating with senior developers.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2021 - 2025</div>
+                            <h3 class="timeline-title">Bachelor's in Computer Science</h3>
+                            <p class="timeline-description">
+                                Pursuing comprehensive studies in computer science fundamentals, algorithms, 
+                                data structures, and software engineering principles. Expected graduation in 2025.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills-section" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Technical Skills</h2>
+                    <p class="section-subtitle">Technologies and tools I work with</p>
+                </div>
+                
+                <div class="skills-container">
+                    <!-- Frontend Skills -->
+                    <div class="skill-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-laptop-code"></i>
+                            Frontend Development
+                        </h3>
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="fab fa-react"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <h4 class="skill-name">React</h4>
+                                    <p class="skill-description">Building dynamic UIs with hooks, context, and modern patterns</p>
+                                    <div class="skill-level">
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" style="width: 85%"></div>
+                                        </div>
+                                        <span class="skill-percentage">85%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="fab fa-js-square"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <h4 class="skill-name">JavaScript</h4>
+                                    <p class="skill-description">ES6+, async/await, DOM manipulation, and modern JS patterns</p>
+                                    <div class="skill-level">
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" style="width: 90%"></div>
+                                        </div>
+                                        <span class="skill-percentage">90%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="fab fa-html5"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <h4 class="skill-name">HTML5</h4>
+                                    <p class="skill-description">Semantic markup, accessibility, and modern HTML standards</p>
+                                    <div class="skill-level">
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" style="width: 95%"></div>
+                                        </div>
+                                        <span class="skill-percentage">95%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="fab fa-css3-alt"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <h4 class="skill-name">CSS3</h4>
+                                    <p class="skill-description">Flexbox, Grid, animations, and responsive design</p>
+                                    <div class="skill-level">
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" style="width: 88%"></div>
+                                        </div>
+                                        <span class="skill-percentage">88%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Backend & AI Skills -->
+                    <div class="skill-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-server"></i>
+                            Backend & AI Tools
+                        </h3>
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="fab fa-node-js"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <h4 class="skill-name">Node.js</h4>
+                                    <p class="skill-description">Server-side JavaScript, APIs, and backend development</p>
+                                    <div class="skill-level">
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" style="width: 75%"></div>
+                                        </div>
+                                        <span class="skill-percentage">75%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="fab fa-python"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <h4 class="skill-name">Python</h4>
+                                    <p class="skill-description">Scripting, automation, and AI/ML integration</p>
+                                    <div class="skill-level">
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" style="width: 80%"></div>
+                                        </div>
+                                        <span class="skill-percentage">80%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="fas fa-robot"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <h4 class="skill-name">AI Integration</h4>
+                                    <p class="skill-description">OpenAI APIs, ChatGPT integration, and AI-powered features</p>
+                                    <div class="skill-level">
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" style="width: 75%"></div>
+                                        </div>
+                                        <span class="skill-percentage">75%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="fas fa-wind"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <h4 class="skill-name">Tailwind CSS</h4>
+                                    <p class="skill-description">Utility-first CSS framework for rapid UI development</p>
+                                    <div class="skill-level">
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" style="width: 90%"></div>
+                                        </div>
+                                        <span class="skill-percentage">90%</span>
+                                    </div>
+                                </div>
+                                                        </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Additional Technologies -->
+                    <div class="skill-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-tools"></i>
+                            Additional Technologies & Tools
+                        </h3>
+                        <div class="skills-grid-compact">
+                            <div class="skill-card-compact">
+                                <div class="skill-icon-compact">
+                                    <i class="fab fa-js-square"></i>
+                                </div>
+                                <div class="skill-info-compact">
+                                    <h4 class="skill-name-compact">Next.js</h4>
+                                    <div class="skill-level-compact">
+                                        <div class="skill-bar-compact">
+                                            <div class="skill-progress-compact" style="width: 80%"></div>
+                                        </div>
+                                        <span class="skill-percentage-compact">80%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-card-compact">
+                                <div class="skill-icon-compact">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <div class="skill-info-compact">
+                                    <h4 class="skill-name-compact">MongoDB</h4>
+                                    <div class="skill-level-compact">
+                                        <div class="skill-bar-compact">
+                                            <div class="skill-progress-compact" style="width: 75%"></div>
+                                        </div>
+                                        <span class="skill-percentage-compact">75%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-card-compact">
+                                <div class="skill-icon-compact">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <div class="skill-info-compact">
+                                    <h4 class="skill-name-compact">MySQL</h4>
+                                    <div class="skill-level-compact">
+                                        <div class="skill-bar-compact">
+                                            <div class="skill-progress-compact" style="width: 70%"></div>
+                                        </div>
+                                        <span class="skill-percentage-compact">70%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-card-compact">
+                                <div class="skill-icon-compact">
+                                    <i class="fab fa-github"></i>
+                                </div>
+                                <div class="skill-info-compact">
+                                    <h4 class="skill-name-compact">GitHub</h4>
+                                    <div class="skill-level-compact">
+                                        <div class="skill-bar-compact">
+                                            <div class="skill-progress-compact" style="width: 90%"></div>
+                                        </div>
+                                        <span class="skill-percentage-compact">90%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-card-compact">
+                                <div class="skill-icon-compact">
+                                    <i class="fab fa-js-square"></i>
+                                </div>
+                                <div class="skill-info-compact">
+                                    <h4 class="skill-name-compact">TypeScript</h4>
+                                    <div class="skill-level-compact">
+                                        <div class="skill-bar-compact">
+                                            <div class="skill-progress-compact" style="width: 85%"></div>
+                                        </div>
+                                        <span class="skill-percentage-compact">85%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-card-compact">
+                                <div class="skill-icon-compact">
+                                    <i class="fas fa-wind"></i>
+                                </div>
+                                <div class="skill-info-compact">
+                                    <h4 class="skill-name-compact">Tailwind CSS</h4>
+                                    <div class="skill-level-compact">
+                                        <div class="skill-bar-compact">
+                                            <div class="skill-progress-compact" style="width: 92%"></div>
+                                        </div>
+                                        <span class="skill-percentage-compact">92%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-card-compact">
+                                <div class="skill-icon-compact">
+                                    <i class="fas fa-layer-group"></i>
+                                </div>
+                                <div class="skill-info-compact">
+                                    <h4 class="skill-name-compact">Material UI</h4>
+                                    <div class="skill-level-compact">
+                                        <div class="skill-bar-compact">
+                                            <div class="skill-progress-compact" style="width: 78%"></div>
+                                        </div>
+                                        <span class="skill-percentage-compact">78%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects-section" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">A showcase of my recent work and achievements</p>
+                </div>
+                
+                <div class="projects-grid">
+                    <!-- Food Hub Project -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/food_hub.png" alt="The Food Hub - Full Stack Food Delivery App" loading="lazy">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/Nikhil2690/the-food-hub" class="project-link" target="_blank" rel="noopener">
+                                        <i class="fab fa-github"></i>
+                                        <span>Code</span>
+                                    </a>
+                                    <a href="https://the-food-hub26.netlify.app/" class="project-link" target="_blank" rel="noopener">
+                                        <i class="fas fa-external-link-alt"></i>
+                                        <span>Live Demo</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">Full Stack Application</div>
+                            <h3 class="project-title">The Food Hub</h3>
+                            <p class="project-description">
+                                A comprehensive full-stack food delivery application built with React and modern web technologies. 
+                                Features include user authentication, real-time order tracking, payment integration, and an 
+                                intuitive admin dashboard for restaurant management.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Vite</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Full Stack</span>
+                            </div>
+                            <div class="project-features">
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Modern React with Vite</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Full-stack architecture</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Responsive food delivery UI</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Weather App Project -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/weather app screenshot.png" alt="Weather App Screenshot" loading="lazy">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/Nikhil2690/Weather-App-project" class="project-link" target="_blank" rel="noopener">
+                                        <i class="fab fa-github"></i>
+                                        <span>Code</span>
+                                    </a>
+                                    <a href="#" class="project-link" target="_blank" rel="noopener">
+                                        <i class="fas fa-external-link-alt"></i>
+                                        <span>Live Demo</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">Web Application</div>
+                            <h3 class="project-title">Weather Forecast App</h3>
+                            <p class="project-description">
+                                A responsive weather application that provides real-time weather data and forecasts. 
+                                Features location-based weather detection, 5-day forecast, and intuitive UI design 
+                                with dynamic backgrounds based on weather conditions.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Weather API</span>
+                            </div>
+                            <div class="project-features">
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Real-time weather data</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Location-based detection</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Responsive design</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Nike Clone Project -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/Nike clone screenshot.png" alt="Nike Clone Screenshot" loading="lazy">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/Nikhil2690/Nike-Clone-web-app" class="project-link" target="_blank" rel="noopener">
+                                        <i class="fab fa-github"></i>
+                                        <span>Code</span>
+                                    </a>
+                                    <a href="#" class="project-link" target="_blank" rel="noopener">
+                                        <i class="fas fa-external-link-alt"></i>
+                                        <span>Live Demo</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">E-commerce UI</div>
+                            <h3 class="project-title">Nike Brand Clone</h3>
+                            <p class="project-description">
+                                A pixel-perfect recreation of Nike's landing page showcasing modern React development 
+                                and Tailwind CSS. Features responsive design, smooth animations, and optimized 
+                                performance with component-based architecture.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Tailwind CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Responsive</span>
+                            </div>
+                            <div class="project-features">
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Modern React patterns</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Tailwind CSS styling</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Mobile-first design</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- AI-Powered Project (Conceptual) -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-robot"></i>
+                                <span>AI Project</span>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/Nikhil2690/gemini-clone" class="project-link" target="_blank" rel="noopener">
+                                        <i class="fab fa-github"></i>
+                                        <span>Code</span>
+                                    </a>
+                                    <a href="#" class="project-link" target="_blank" rel="noopener">
+                                        <i class="fas fa-external-link-alt"></i>
+                                        <span>Live Demo</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">AI Integration</div>
+                            <h3 class="project-title">Gemini AI Clone</h3>
+                            <p class="project-description">
+                                A sophisticated clone of Google's Gemini AI interface built with React and Vite. 
+                                Features a modern, responsive design with real-time AI conversations, chat history, 
+                                and an intuitive user experience that mimics Google's Gemini platform.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Vite</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Gemini API</span>
+                            </div>
+                            <div class="project-features">
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Gemini AI integration</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Modern React architecture</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Responsive UI design</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="projects-cta">
+                    <p>Interested in seeing more of my work?</p>
+                    <a href="https://github.com/Nikhil2690" class="btn btn-primary" target="_blank" rel="noopener">
+                        <i class="fab fa-github"></i>
+                        View All Projects
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="section-subtitle">Ready to bring your ideas to life? Let's connect!</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <a href="mailto:nikhiladwani3@gmail.com">nikhiladwani3@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>LinkedIn</h3>
+                            <a href="https://www.linkedin.com/in/nikhiladwani/" target="_blank" rel="noopener">Connect with me</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>GitHub</h3>
+                            <a href="https://github.com/Nikhil2690" target="_blank" rel="noopener">View my repositories</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form class="contact-form-container">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Nikhil Adwani</h3>
+                    <p>Full Stack Developer & AI Enthusiast</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="#hero">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="https://www.linkedin.com/in/nikhiladwani/" target="_blank" rel="noopener">LinkedIn</a></li>
+                            <li><a href="https://github.com/Nikhil2690" target="_blank" rel="noopener">GitHub</a></li>
+                            <li><a href="mailto:nikhiladwani3@gmail.com">Email</a></li>
+                            <li><a href="https://drive.google.com/file/d/1_QHAr09vhVvXx6c__J2HQPJtZsttehSd/view?usp=drive_link" target="_blank" rel="noopener">Resume</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/nikhiladwani/" target="_blank" rel="noopener" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Nikhil2690" target="_blank" rel="noopener" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:nikhiladwani3@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Nikhil Adwani. All rights reserved.</p>
+                <p>Built with passion using modern web technologies</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        // Typed.js initialization
+        var typed = new Typed('#typed-text', {
+            strings: ['Full Stack Developer', 'AI Enthusiast', 'Problem Solver', 'Creative Thinker'],
+            typeSpeed: 80,
+            backSpeed: 50,
+            loop: true,
+            showCursor: true,
+            cursorChar: '|'
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Contact form handling
+        document.querySelector('.contact-form-container').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const subject = formData.get('subject');
+            const message = formData.get('message');
+            
+            // Show loading state
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            submitBtn.disabled = true;
+            
+            // Create mailto link
+            const mailtoLink = `mailto:nikhiladwani3@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
+            
+            // Try to open email client
+            try {
+                window.location.href = mailtoLink;
+                
+                // Show success message with better UX
+                setTimeout(() => {
+                    // Create custom success message
+                    const successMsg = document.createElement('div');
+                    successMsg.className = 'success-message';
+                    successMsg.innerHTML = `
+                        <div class="success-content">
+                            <i class="fas fa-check-circle"></i>
+                            <h3>Message Prepared!</h3>
+                            <p>Your email client should open now. If it doesn't, please email me directly at:</p>
+                            <a href="mailto:nikhiladwani3@gmail.com">nikhiladwani3@gmail.com</a>
+                            <button onclick="this.parentElement.parentElement.remove()" class="close-btn">Close</button>
+                        </div>
+                    `;
+                    document.body.appendChild(successMsg);
+                    
+                    // Reset form and button
+                    this.reset();
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                }, 1000);
+                
+            } catch (error) {
+                // Fallback if mailto fails
+                setTimeout(() => {
+                    alert('Unable to open email client. Please contact me directly at: nikhiladwani3@gmail.com');
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                }, 1000);
+            }
+        });
+
+        // Mobile menu toggle
+        const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        if (mobileMenuToggle) {
+            mobileMenuToggle.addEventListener('click', function() {
+                navMenu.classList.toggle('active');
+                this.classList.toggle('active');
+            });
+        }
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                mobileMenuToggle.classList.remove('active');
+            });
+        });
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Animate skill bars on scroll
+        const observerOptions = {
+            threshold: 0.5,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const skillBars = entry.target.querySelectorAll('.skill-progress');
+                    skillBars.forEach(bar => {
+                        bar.style.animation = 'fillBar 2s ease-in-out forwards';
+                    });
+                }
+            });
+        }, observerOptions);
+
+        const skillsSection = document.querySelector('.skills-section');
+        if (skillsSection) {
+            observer.observe(skillsSection);
+        }
+    </script>
+   <script src="darkMode.js"></script>
+    <script src="performance.js"></script>
+</body>
+</html>
