@@ -134,6 +134,8 @@ body {
   background-color: var(--bg-primary);
   transition: background-color var(--transition-normal), color var(--transition-normal);
   overflow-x: hidden;
+  -webkit-text-size-adjust: 100%; /* Prevent font scaling in iOS */
+  -webkit-tap-highlight-color: transparent; /* Remove tap highlight on mobile */
 }
 
 /* ===== UTILITY CLASSES ===== */
@@ -141,6 +143,19 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 var(--space-4);
+}
+
+/* Mobile-first container adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 var(--space-3);
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 var(--space-2);
+  }
 }
 
 .section-header {
@@ -1440,6 +1455,10 @@ body {
     transition: all var(--transition-normal);
     flex-direction: column;
     align-items: stretch;
+    z-index: var(--z-fixed);
+    box-shadow: var(--shadow-lg);
+    max-height: calc(100vh - 80px);
+    overflow-y: auto;
   }
   
   .nav-menu.active {
@@ -1451,6 +1470,29 @@ body {
   .nav-list {
     flex-direction: column;
     gap: var(--space-4);
+    width: 100%;
+  }
+  
+  .nav-item {
+    width: 100%;
+  }
+  
+  .nav-link {
+    display: block;
+    padding: var(--space-3) var(--space-4);
+    text-align: center;
+    border-radius: var(--radius-md);
+    transition: all var(--transition-fast);
+  }
+  
+  .nav-link:hover {
+    background: var(--gray-100);
+  }
+  
+  .resume-link {
+    margin-top: var(--space-2) !important;
+    display: block !important;
+    text-align: center !important;
   }
   
   .mobile-menu-toggle {
@@ -1471,18 +1513,39 @@ body {
   
   .hero-name {
     font-size: var(--font-size-4xl);
+    line-height: 1.1;
   }
   
   .hero-title {
     font-size: var(--font-size-2xl);
+    line-height: 1.3;
+  }
+  
+  .hero-description {
+    font-size: var(--font-size-base);
+    line-height: 1.6;
+    margin-bottom: var(--space-6);
   }
   
   .hero-cta {
     justify-content: center;
+    gap: var(--space-3);
+    flex-wrap: wrap;
   }
   
   .hero-stats {
     justify-content: center;
+    gap: var(--space-6);
+    flex-wrap: wrap;
+  }
+  
+  .stat-item {
+    min-width: 120px;
+    text-align: center;
+  }
+  
+  .stat-number {
+    font-size: var(--font-size-2xl);
   }
   
   .section-title {
@@ -1503,10 +1566,140 @@ body {
   
   .projects-grid {
     grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+  
+  .project-card {
+    margin-bottom: var(--space-4);
+  }
+  
+  .project-image {
+    height: 200px;
+  }
+  
+  .project-content {
+    padding: var(--space-4);
+  }
+  
+  .project-title {
+    font-size: var(--font-size-lg);
+    line-height: 1.3;
+  }
+  
+  .project-description {
+    font-size: var(--font-size-sm);
+    line-height: 1.5;
+    margin-bottom: var(--space-4);
+  }
+  
+  .project-tech {
+    gap: var(--space-2);
+    margin-bottom: var(--space-4);
+  }
+  
+  .tech-tag {
+    font-size: var(--font-size-xs);
+    padding: var(--space-1) var(--space-2);
+  }
+  
+  .project-features {
+    gap: var(--space-2);
+  }
+  
+  .feature-item {
+    font-size: var(--font-size-xs);
+  }
+  
+  .project-links {
+    gap: var(--space-3);
+  }
+  
+  .project-link {
+    padding: var(--space-2) var(--space-3);
+    font-size: var(--font-size-xs);
+    min-width: 100px;
   }
   
   .skills-grid {
     grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+  
+  .skill-card {
+    padding: var(--space-4);
+  }
+  
+  .skill-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: var(--font-size-lg);
+  }
+  
+  .skill-name {
+    font-size: var(--font-size-base);
+  }
+  
+  .skill-description {
+    font-size: var(--font-size-sm);
+    line-height: 1.4;
+  }
+  
+  /* Compact skills for mobile */
+  .skills-grid-compact {
+    grid-template-columns: 1fr;
+    gap: var(--space-3);
+  }
+  
+  .skill-card-compact {
+    padding: var(--space-3);
+    gap: var(--space-2);
+  }
+  
+  .skill-icon-compact {
+    width: 2rem;
+    height: 2rem;
+    font-size: var(--font-size-base);
+  }
+  
+  .skill-name-compact {
+    font-size: var(--font-size-sm);
+  }
+  
+  /* Contact section mobile */
+  .contact-content {
+    gap: var(--space-8);
+  }
+  
+  .contact-item {
+    margin-bottom: var(--space-6);
+    flex-direction: column;
+    text-align: center;
+    gap: var(--space-3);
+  }
+  
+  .contact-icon {
+    align-self: center;
+  }
+  
+  .contact-form {
+    padding: var(--space-6);
+  }
+  
+  .form-group {
+    margin-bottom: var(--space-4);
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    font-size: 16px; /* Prevents zoom on iOS */
+    padding: var(--space-4);
+  }
+  
+  .btn {
+    width: 100%;
+    justify-content: center;
+    padding: var(--space-4) var(--space-6);
+    font-size: var(--font-size-base);
   }
   
   .footer-content {
@@ -1524,24 +1717,96 @@ body {
     padding: var(--space-3);
   }
   
+  .hero-section {
+    padding-top: 4rem;
+    min-height: auto;
+    padding-bottom: var(--space-12);
+  }
+  
   .hero-name {
     font-size: var(--font-size-3xl);
+    margin-bottom: var(--space-3);
+  }
+  
+  .hero-title {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--space-4);
+  }
+  
+  .hero-description {
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--space-6);
   }
   
   .hero-cta {
     flex-direction: column;
     align-items: center;
+    gap: var(--space-3);
+    margin-bottom: var(--space-8);
+  }
+  
+  .hero-cta .btn {
+    width: 100%;
+    max-width: 280px;
+  }
+  
+  .hero-stats {
+    gap: var(--space-4);
+  }
+  
+  .stat-item {
+    min-width: 100px;
+  }
+  
+  .stat-number {
+    font-size: var(--font-size-xl);
+  }
+  
+  .stat-label {
+    font-size: var(--font-size-xs);
   }
   
   .hero-image-container {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
   }
   
   .floating-icon {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2rem;
+    height: 2rem;
+    font-size: var(--font-size-base);
+  }
+  
+  .section-title {
+    font-size: var(--font-size-2xl);
+    margin-bottom: var(--space-3);
+  }
+  
+  .section-subtitle {
+    font-size: var(--font-size-base);
+  }
+  
+  /* Timeline adjustments */
+  .timeline-item {
+    padding-left: var(--space-8);
+  }
+  
+  .timeline-title {
     font-size: var(--font-size-lg);
+  }
+  
+  .timeline-description {
+    font-size: var(--font-size-sm);
+  }
+  
+  /* About section */
+  .about-paragraph {
+    font-size: var(--font-size-base);
+  }
+  
+  .skill-tag {
+    font-size: var(--font-size-xs);
+    padding: var(--space-1) var(--space-2);
   }
 }
 
